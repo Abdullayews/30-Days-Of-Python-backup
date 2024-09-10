@@ -163,7 +163,7 @@ print(second_last)      # mango
 ### Unpacking List Items
 
 ```py
-lst = ['item','item2','item3', 'item4', 'item5']
+lst = ['item1','item2','item3', 'item4', 'item5']
 first_item, second_item, third_item, *rest = lst
 print(first_item)     # item1
 print(second_item)    # item2
@@ -175,7 +175,7 @@ print(rest)           # ['item4', 'item5']
 ```py
 # First Example
 fruits = ['banana', 'orange', 'mango', 'lemon','lime','apple']
-first_fruit, second_fruit, third_fruit, *rest = lst
+first_fruit, second_fruit, third_fruit, *rest = fruits 
 print(first_fruit)     # banana
 print(second_fruit)    # orange
 print(third_fruit)     # mango
@@ -364,7 +364,7 @@ print(fruits)       # []
 
 ### Copying a List
 
-It is possible to copy a list by reassigning it to a new variable in the following way: list2 = list1. Now, list2 is a reference of list1, any changes we make in list2 will also modify the original, list2. But there are lots of case in which we do not like to modify the original instead we like to have a different copy. One of way of avoiding the problem above is using _copy()_.
+It is possible to copy a list by reassigning it to a new variable in the following way: list2 = list1. Now, list2 is a reference of list1, any changes we make in list2 will also modify the original, list1. But there are lots of case in which we do not like to modify the original instead we like to have a different copy. One of way of avoiding the problem above is using _copy()_.
 
 ```py
 # syntax
